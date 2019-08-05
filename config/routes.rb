@@ -8,4 +8,3 @@ resources :posts only: [:index, :show, :update, :edit, :create, :new]
   root 'posts#index'
 
 end
-
