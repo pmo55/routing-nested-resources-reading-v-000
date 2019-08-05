@@ -3158,3 +3158,13 @@ Processing by AuthorsController#show as HTML
 Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/authors/6/posts/5" for 149.142.201.3 at 2019-08-05 14:42:09 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"author_id"=>"6", "id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
